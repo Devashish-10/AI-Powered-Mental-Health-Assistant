@@ -58,14 +58,14 @@ Raw CSV → Cleaned → Tokenized → Encoded → Model Input
 
 ### Sample Training Code
 
-```python
+'''python
 trainer = Trainer(
     model=model,
     args=training_args,
     train_dataset=train_dataset,
     tokenizer=tokenizer
 )
-trainer.train()
+trainer.train()'''
 
 ### Checkpoints
 Model checkpoints are saved every 500 steps to avoid loss during crashes and support resuming training.

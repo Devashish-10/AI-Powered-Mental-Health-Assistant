@@ -67,12 +67,10 @@ trainer = Trainer(
 )
 trainer.train()
 
-
-
 ### Checkpoints
 Model checkpoints are saved every 500 steps to avoid loss during crashes and support resuming training.
 
-###🧪 Evaluation :
+### 🧪 Evaluation :
 Evaluation of conversational AI is inherently challenging. Planned metrics include:
 
 Perplexity: Lower perplexity implies more confident predictions.
@@ -92,7 +90,7 @@ Measures the overlap of n-grams between generated and reference responses. A hig
 BLEU Score: 0.71
 Evaluates how closely the model-generated responses align with human-written responses based on precision of n-gram matches. A score of 0.71 reflects good alignment in language structure and semantics.
 
- ###🎯 Deployment (Ideas)
+ ### 🎯 Deployment (Ideas)
 While this repo focuses on training, deployment can include:
 
 ✅ Flask / Streamlit Web UI for user interaction.

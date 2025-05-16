@@ -141,20 +141,20 @@ This reflects the model's ability to provide a human-like, empathetic reply by l
 
 mental-health-chatbot/
 │
-├── train.csv                # Dataset (context/response)
-├── training.ipynb           # Model training notebook
-├── results/                 # Model checkpoints
-├── logs/                    # Training logs for TensorBoard
+├── train.csv                
+├── training.ipynb          
+├── results/                
+├── logs/                    
 ├── README.md                
 
-###🛠 Tech Stack
+### 🛠 Tech Stack
 Python 3.10+
 
-PyTorch
-Transformers (HuggingFace)
-Jupyter Notebooks
-Pandas
-TensorBoard 
+1.PyTorch
+2.Transformers (HuggingFace)
+J.upyter Notebooks
+4.Pandas
+5.TensorBoard 
 
 ### 💭 Summary
 This project showcases how transformer models like GPT-2 can be adapted into task-specific applications like mental health chatbots. It combines modern NLP techniques, transfer learning, and responsible AI use-cases to help demonstrate the power of fine-tuned LLMs.

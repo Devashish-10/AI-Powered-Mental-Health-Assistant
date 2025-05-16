@@ -67,22 +67,20 @@ trainer = Trainer(
 )
 trainer.train()
 
-Checkpoints
+
+
+### Checkpoints
 Model checkpoints are saved every 500 steps to avoid loss during crashes and support resuming training.
 
-🧪 Evaluation :
+###🧪 Evaluation :
 Evaluation of conversational AI is inherently challenging. Planned metrics include:
 
 Perplexity: Lower perplexity implies more confident predictions.
 
 Human Evaluation: Assess responses based on:
-
 Empathy
-
 Relevance
-
 Coherence
-
 Safety
 
 Evaluation Loss:
@@ -94,7 +92,7 @@ Measures the overlap of n-grams between generated and reference responses. A hig
 BLEU Score: 0.71
 Evaluates how closely the model-generated responses align with human-written responses based on precision of n-gram matches. A score of 0.71 reflects good alignment in language structure and semantics.
 
-🎯 Deployment (Ideas)
+ ###🎯 Deployment (Ideas)
 While this repo focuses on training, deployment can include:
 
 ✅ Flask / Streamlit Web UI for user interaction.
@@ -115,14 +113,14 @@ Bar chart comparing average response length before and after training.
 TensorBoard for training loss visualization:
 tensorboard --logdir=./logs
 
-🚧 Challenges & Solutions
+### 🚧 Challenges & Solutions
 Challenge	Mitigation
 Small Dataset	Consider using dialogue augmentation or semi-supervised data
 GPT-2 Output Drift	Fine-tune over multiple epochs with early stopping
 Long Inputs	Truncate or split long context-response pairs
 Biased Outputs	Apply filtering or bias detection post-generation
 
-🔬 Future Enhancements
+### 🔬 Future Enhancements
 🧠 Fine-tune larger models like GPT2-Medium or DialoGPT.
 
 ⏳ Enable multi-turn conversation support.
@@ -133,7 +131,7 @@ Biased Outputs	Apply filtering or bias detection post-generation
 
 🧑‍⚕️ Collaborate with mental health experts to validate safety and tone.
 
-🧵 Example Use Case
+### 🧵 Example Use Case
 Scenario:
 
 User: "I feel like no one understands me anymore..."
@@ -141,10 +139,8 @@ Chatbot: "I hear you. It's completely okay to feel that way. Would you like to t
 
 This reflects the model's ability to provide a human-like, empathetic reply by leveraging transfer learning from GPT-2 and task-specific fine-tuning.
 
-📂 File Structure
-bash
-Copy
-Edit
+### 📂 File Structure
+
 mental-health-chatbot/
 │
 ├── train.csv                # Dataset (context/response)
@@ -152,7 +148,8 @@ mental-health-chatbot/
 ├── results/                 # Model checkpoints
 ├── logs/                    # Training logs for TensorBoard
 ├── README.md                
-🛠 Tech Stack
+
+###🛠 Tech Stack
 Python 3.10+
 
 PyTorch
@@ -161,6 +158,6 @@ Jupyter Notebooks
 Pandas
 TensorBoard 
 
-💭 Summary
+### 💭 Summary
 This project showcases how transformer models like GPT-2 can be adapted into task-specific applications like mental health chatbots. It combines modern NLP techniques, transfer learning, and responsible AI use-cases to help demonstrate the power of fine-tuned LLMs.
 
